@@ -24,9 +24,9 @@ console.log('   ██║   ██║   ██║██╔═██╗ ██╔
 console.log('   ██║   ╚██████╔╝██║  ██╗███████╗██║ ╚████║    ╚██████╔╝███████╗██║ ╚████║')
 console.log('   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚═════╝ ╚══════╝╚═╝  ╚═══╝')
                                                                           
-  console.log('['+'1'.brightBlue+'] Commencer');
-  console.log('['+'2'.brightBlue+'] Aide');
-  console.log('['+'3'.brightBlue+'] Sortir');
+  console.log('['+'1'.brightBlue+'] Start');
+  console.log('['+'2'.brightBlue+'] Help');
+  console.log('['+'3'.brightBlue+'] Exit');
   let choice = prompt('['+'?'.brightBlue+']>')
 
   if(choice == 1){
@@ -34,13 +34,13 @@ console.log('   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══
     console.log('['+'2'.brightBlue+'] 10minemai');
     console.log('['+'3'.brightBlue+'] Tempmaildev');
     let emailchoice = prompt('[?]>');
-    console.log('['+'!'.red+'] Tu veux envoyer les tokens a un webhook? y/n: ');
+    console.log('['+'!'.red+'] Do you want to send tokens to a webhook? y/n: ');
     let choicewbwile = prompt('[?]>');
     if(choicewbwile == 'y'){
       webhook = prompt('Webhook: ')
     }
-    let tokensname = prompt('Noms des tokens: ');
-    let HowTokens = prompt('Combien tu veux en generer: ');
+    let tokensname = prompt('Token username: ');
+    let HowTokens = prompt('How many token do you want: ');
 
     const StealthPlugin = require('puppeteer-extra-plugin-stealth')
     const randchars = require("crypto")
@@ -320,7 +320,7 @@ console.log('   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══
   }
 
   else if(choice == 2){
-    console.log("Si tu as besoin d'aide, contacte moi Sans#0006 ou rejoint mon serveur discord https://dsc.gg/sansserver et oui, ceci est pas mon script mais juste une modification d'un autre.")
+    console.log("If you want help, contact me Sans#0006 or join my discord server https://dsc.gg/sansserver and yes, this is not my script but just a modification of another.")
     let reactionChoice = prompt('['+'?'.brightBlue+']>')
     reactionChoice = main()
   }
