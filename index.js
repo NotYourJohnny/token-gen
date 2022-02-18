@@ -17,15 +17,16 @@ async function main(){
 
   const colors = require('colors');
 
-  console.log('╭━━━━╮╱╭╮╱╱╱╱╱╱╱╱╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮'.brightBlue);
-  console.log('┃╭╮╭╮┃╱┃┃╱╱╱╱╱╱╱╱┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱╱╭╯╰╮'.brightBlue);
-  console.log('╰╯┃┃┣┻━┫┃╭┳━━┳━╮╱┃┃╱╰╋━━┳━╮╭━━┳━┳━┻╮╭╋━━┳━╮'.brightBlue);
-  console.log('╱╱┃┃┃╭╮┃╰╯┫┃━┫╭╮╮┃┃╭━┫┃━┫╭╮┫┃━┫╭┫╭╮┃┃┃╭╮┃╭╯'.brightBlue);
-  console.log('╱╱┃┃┃╰╯┃╭╮┫┃━┫┃┃┃┃╰┻━┃┃━┫┃┃┃┃━┫┃┃╭╮┃╰┫╰╯┃┃');
-  console.log('╱╱╰╯╰━━┻╯╰┻━━┻╯╰╯╰━━━┻━━┻╯╰┻━━┻╯╰╯╰┻━┻━━┻╯');
-  console.log('['+'1'.brightBlue+'] Start');
-  console.log('['+'2'.brightBlue+'] Help');
-  console.log('['+'3'.brightBlue+'] Exit');
+console.log('████████╗ ██████╗ ██╗  ██╗███████╗███╗   ██╗     ██████╗ ███████╗███╗   ██╗')
+console.log('╚══██╔══╝██╔═══██╗██║ ██╔╝██╔════╝████╗  ██║    ██╔════╝ ██╔════╝████╗  ██║')
+console.log('   ██║   ██║   ██║█████╔╝ █████╗  ██╔██╗ ██║    ██║  ███╗█████╗  ██╔██╗ ██║')
+console.log('   ██║   ██║   ██║██╔═██╗ ██╔══╝  ██║╚██╗██║    ██║   ██║██╔══╝  ██║╚██╗██║')
+console.log('   ██║   ╚██████╔╝██║  ██╗███████╗██║ ╚████║    ╚██████╔╝███████╗██║ ╚████║')
+console.log('   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝     ╚═════╝ ╚══════╝╚═╝  ╚═══╝')
+                                                                          
+  console.log('['+'1'.brightBlue+'] Commencer');
+  console.log('['+'2'.brightBlue+'] Aide');
+  console.log('['+'3'.brightBlue+'] Sortir');
   let choice = prompt('['+'?'.brightBlue+']>')
 
   if(choice == 1){
@@ -33,13 +34,13 @@ async function main(){
     console.log('['+'2'.brightBlue+'] 10minemai');
     console.log('['+'3'.brightBlue+'] Tempmaildev');
     let emailchoice = prompt('[?]>');
-    console.log('['+'!'.red+'] Do you want to send your tokens to the webhook? y/n: ');
+    console.log('['+'!'.red+'] Tu veux envoyer les tokens a un webhook? y/n: ');
     let choicewbwile = prompt('[?]>');
     if(choicewbwile == 'y'){
       webhook = prompt('Webhook: ')
     }
-    let tokensname = prompt('Tokens username: ');
-    let HowTokens = prompt('How many tokens do you wanna generate: ');
+    let tokensname = prompt('Noms des tokens: ');
+    let HowTokens = prompt('Combien tu veux en generer: ');
 
     const StealthPlugin = require('puppeteer-extra-plugin-stealth')
     const randchars = require("crypto")
@@ -319,7 +320,7 @@ async function main(){
   }
 
   else if(choice == 2){
-    console.log('If you need any help contact me Lososik#3523 or join my discord server https://discord.gg/vHWJnmNsgZ and ye this is not my token gen its just remake of one.')
+    console.log("Si tu as besoin d'aide, contacte moi Sans#0006 ou rejoint mon serveur discord https://dsc.gg/sansserver et oui, ceci est pas mon script mais juste une modification d'un autre.")
     let reactionChoice = prompt('['+'?'.brightBlue+']>')
     reactionChoice = main()
   }
